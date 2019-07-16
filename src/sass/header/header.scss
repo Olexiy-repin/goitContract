@@ -1,0 +1,21 @@
+.header {
+  padding: 1.5rem 0;
+  background-image: url("../images/header/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header__logo-container {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+  }
+}
+
+.header__logo {
+  width: 9rem;
+  height: 3rem;
+}

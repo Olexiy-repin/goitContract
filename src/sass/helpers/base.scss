@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  @media (min-width: 1200px) {
+    height: 100vh;
+  }
+}
+
+body {
+  @media (min-width: 1200px) {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.main {
+  .container {
+    @media (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.container {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  @media (min-width: 1200px) {
+    padding: 0;
+  }
+}
